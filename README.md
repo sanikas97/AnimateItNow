@@ -17,7 +17,7 @@ This repository contains a comprehensive collection of animated web components a
 
 ## 🌐 Live Demo
 
-[Coming Soon]
+🔗 [**View Live Demo**](https://anujshrivastava01.github.io/AnimateItNow/)
 
 ## 🎯 What You Can Add
 
