@@ -5,11 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hover Button Effects | AnimateItNow</title>
     <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .hover-btn:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 24px rgba(79, 140, 255, 0.18);
+      }
+      .hover-btn.glow:hover {
+        background: #2563eb;
+      }
+      .hover-btn.outline:hover {
+        background: #4f8cff;
+        color: #fff;
+      }
+      .hover-btn.gradient:hover {
+        background: linear-gradient(90deg, #2563eb 60%, #4f8cff 100%);
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
       <div class="nav-left">
-        <img src="../logo.png" alt="Logo" class="logo" />
+        <img src="../images/logo.png" alt="Logo" class="logo" />
         <span class="site-name">AnimateItNow</span>
       </div>
       <ul class="nav-links">
@@ -31,14 +47,13 @@
           flex-wrap: wrap;
         ">
         <button
-          class="hover-btn"
+          class="hover-btn glow"
           style="
             background: #4f8cff;
             color: #fff;
             padding: 1em 2em;
             border: none;
             border-radius: 2em;
-            font-size: 1.1rem;
             font-weight: 600;
             box-shadow: 0 4px 16px rgba(79, 140, 255, 0.12);
             transition: background 0.2s, transform 0.2s;
@@ -47,7 +62,7 @@
           Glow
         </button>
         <button
-          class="hover-btn"
+          class="hover-btn outline"
           style="
             background: #fff;
             color: #4f8cff;
@@ -63,7 +78,7 @@
           Outline
         </button>
         <button
-          class="hover-btn"
+          class="hover-btn gradient"
           style="
             background: linear-gradient(90deg, #4f8cff 60%, #2563eb 100%);
             color: #fff;
@@ -79,22 +94,62 @@
           Gradient
         </button>
       </div>
-      <style>
-        .hover-btn:hover {
-          transform: scale(1.08);
-          box-shadow: 0 8px 24px rgba(79, 140, 255, 0.18);
-        }
-        .hover-btn:nth-child(1):hover {
-          background: #2563eb;
-        }
-        .hover-btn:nth-child(2):hover {
-          background: #4f8cff;
-          color: #fff;
-        }
-        .hover-btn:nth-child(3):hover {
-          background: linear-gradient(90deg, #2563eb 60%, #4f8cff 100%);
-        }
-      </style>
+      <div
+        style="
+          display: flex;
+          gap: 2rem;
+          justify-content: center;
+          margin-top: 2rem;
+          flex-wrap: wrap;
+        ">
+        <button
+          class="hover-btn glow"
+          style="
+            background: #4f8cff;
+            color: #fff;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 2em;
+            font-weight: 600;
+            box-shadow: 0 4px 16px rgba(79, 140, 255, 0.12);
+            transition: background 0.2s, transform 0.2s;
+            cursor: pointer;
+          ">
+          Glow
+        </button>
+        <button
+          class="hover-btn outline"
+          style="
+            background: #fff;
+            color: #4f8cff;
+            padding: 1em 2em;
+            border: 2px solid #4f8cff;
+            border-radius: 2em;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 4px 16px rgba(79, 140, 255, 0.12);
+            transition: background 0.2s, transform 0.2s;
+            cursor: pointer;
+          ">
+          Outline
+        </button>
+        <button
+          class="hover-btn gradient"
+          style="
+            background: linear-gradient(90deg, #4f8cff 60%, #2563eb 100%);
+            color: #fff;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 2em;
+            font-size: 1.1rem;
+            font-weight: 600;
+            box-shadow: 0 4px 16px rgba(79, 140, 255, 0.12);
+            transition: background 0.2s, transform 0.2s;
+            cursor: pointer;
+          ">
+          Gradient
+        </button>
+      </div>
     </main>
     <footer>
       <p>Made with ❤️ by Anuj and Contributors</p>
