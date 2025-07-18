@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page UI | AnimateItNow</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="../logo.png" alt="Logo" class="logo" />
+        <span class="site-name">AnimateItNow</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../templates.html" class="active">Templates</a></li>
+        <li><a href="../contributors.html">Contributors</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
+    </nav>
+    <main class="templates-main">
+      <h1>Login Page UI</h1>
+      <form
+        class="login-form"
+        style="
+          max-width: 350px;
+          margin: 2rem auto;
+          padding: 2rem;
+          background: #fff;
+          border-radius: 1rem;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+          display: flex;
+          flex-direction: column;
+          gap: 1.2rem;
+        ">
+        <input
+          type="text"
+          placeholder="Username"
+          style="
+            padding: 0.8em 1em;
+            border-radius: 0.5em;
+            border: 1px solid #e0e7ff;
+          " />
+        <input
+          type="password"
+          placeholder="Password"
+          style="
+            padding: 0.8em 1em;
+            border-radius: 0.5em;
+            border: 1px solid #e0e7ff;
+          " />
+        <button
+          type="submit"
+          style="
+            background: #4f8cff;
+            color: #fff;
+            padding: 0.8em 1em;
+            border: none;
+            border-radius: 0.5em;
+            font-weight: 600;
+            cursor: pointer;
+          ">
+          Login
+        </button>
+      </form>
+    </main>
+    <footer>
+      <p>Made with ❤️ by Anuj and Contributors</p>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

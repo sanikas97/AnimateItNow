@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Templates | AnimateItNow</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Templates | Open Source Web Hub</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <span class="site-name">AnimateItNow</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="templates.html" class="active">Templates</a></li>
+        <li><a href="contributors.html">Contributors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
+    </nav>
 
-    <body>
-        <nav class="navbar">
-            <div class="nav-left">
-                <img src="logo.png" alt="Logo" class="logo">
-                <span class="site-name">Open Source Web Hub</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="templates.html" class="active">Templates</a></li>
-                <li><a href="contributors.html">Contributors</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
-        </nav>
+    <main class="templates-main">
+      <h1 class="fade-in">Templates Gallery</h1>
+      <section class="templates-grid">
+        <article class="template-card scroll-fade">
+          <h2>Login Page UI</h2>
+          <div class="template-preview login-preview"></div>
+          <a class="template-btn" href="templates/login.html">View</a>
+        </article>
+        <article class="template-card scroll-fade">
+          <h2>Hover Button Effects</h2>
+          <div class="template-preview button-preview"></div>
+          <a class="template-btn" href="templates/button.html">View</a>
+        </article>
+        <article class="template-card scroll-fade">
+          <h2>Loaders</h2>
+          <div class="template-preview loader-preview"></div>
+          <a class="template-btn" href="templates/loader.html">View</a>
+        </article>
+        <article class="template-card scroll-fade">
+          <h2>Modal/Popup Templates</h2>
+          <div class="template-preview modal-preview"></div>
+          <a class="template-btn" href="templates/modal.html">View</a>
+        </article>
+      </section>
+    </main>
 
-        <main class="templates-main">
-            <h1 class="fade-in">Templates Gallery</h1>
-            <section class="templates-grid">
-                <article class="template-card scroll-fade">
-                    <h2>Login Page UI</h2>
-                    <div class="template-preview login-preview"></div>
-                    <button class="template-btn">View Code</button>
-                </article>
-                <article class="template-card scroll-fade">
-                    <h2>Hover Button Effects</h2>
-                    <div class="template-preview button-preview"></div>
-                    <button class="template-btn">View Code</button>
-                </article>
-                <article class="template-card scroll-fade">
-                    <h2>Loaders</h2>
-                    <div class="template-preview loader-preview"></div>
-                    <button class="template-btn">View Code</button>
-                </article>
-                <article class="template-card scroll-fade">
-                    <h2>Modal/Popup Templates</h2>
-                    <div class="template-preview modal-preview"></div>
-                    <button class="template-btn">View Code</button>
-                </article>
-            </section>
-        </main>
-
-        <footer>
-            <p>Made with ❤️ by Anuj and Contributors</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
-
+    <footer>
+      <p>Made with ❤️ by Anuj and Contributors</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
