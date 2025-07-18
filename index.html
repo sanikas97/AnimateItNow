@@ -1,13 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>AnimateitNow</title>
-  <link rel="shortcut icon" href="FullLogo_NoBuffer.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>✨ Welcome to the Animated Website Collection ✨</h1>
-  <div id="gallery"></div>
-  <script src="script.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>itsAnimation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="logo.png" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="logo.png" alt="itsAnimation Logo" class="logo" />
+        <span class="site-name">itsAnimation</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        <li><a href="contributors.html">Contributors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
+    </nav>
+
+    <header class="landing-section">
+      <h1 class="fade-in">Welcome to itsAnimation</h1>
+      <h2 class="fade-in delay-1">
+        A creative space where contributors build beautiful web components.
+      </h2>
+      <p class="fade-in delay-2">
+        This project is a collaborative, open-source platform for sharing and
+        discovering stunning web UI components. Join us to contribute, learn,
+        and inspire others!
+      </p>
+      <a href="#what-is" class="cta-btn bounce">Get Started</a>
+    </header>
+
+    <main>
+      <section id="what-is" class="info-section scroll-fade">
+        <h2>What is this project?</h2>
+        <p>
+          Open Source Web Hub is a community-driven collection of reusable web
+          components, templates, and UI ideas. Anyone can contribute and use
+          these resources for their own projects.
+        </p>
+      </section>
+      <section id="how-to-contribute" class="info-section scroll-fade">
+        <h2>How to contribute?</h2>
+        <p>
+          Fork our repository, add your creative web components, and submit a
+          pull request! All skill levels are welcome. Check out our Templates
+          page for inspiration.
+        </p>
+      </section>
+      <section id="why-open-source" class="info-section scroll-fade">
+        <h2>Why open source?</h2>
+        <p>
+          Open source empowers everyone to learn, share, and build together. Our
+          hub is a place for collaboration, growth, and innovation in web
+          design.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with ❤️ by Anuj and Contributors</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

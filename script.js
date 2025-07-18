@@ -1,29 +1,45 @@
-// List of available animations (contributors can add more here)
-const animations = [
-  {
-    folder: 'animated-login',
-    title: 'Animated Login',
-    desc: 'A stylish animated login form with smooth transitions.',
-  },
-  {
-    folder: 'morphing-loader',
-    title: 'Morphing Loader',
-    desc: 'A loader animation with morphing shapes and vibrant colors.',
-  },
-];
+// Theme toggle
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
 
-const gallery = document.getElementById('gallery');
+function setTheme(dark) {
+  if (dark) {
+    body.classList.add('dark');
+    themeToggle.textContent = '☀️';
+    localStorage.setItem('theme', 'dark');
+  } else {
+    body.classList.remove('dark');
+    themeToggle.textContent = '🌙';
+    localStorage.setItem('theme', 'light');
+  }
+}
 
-animations.forEach((anim, i) => {
-  const card = document.createElement('div');
-  card.className = 'animation-card';
-  card.style.animationDelay = `${0.1 + i * 0.1}s`;
+// Load theme preference
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') setTheme(true);
+else setTheme(false);
 
-  card.innerHTML = `
-    <div class="animation-card-title">${anim.title}</div>
-    <div class="animation-card-desc">${anim.desc}</div>
-    <a class="animation-card-link" href="animations/${anim.folder}/index.html" target="_blank">View Demo</a>
-  `;
-
-  gallery.appendChild(card);
+themeToggle.addEventListener('click', () => {
+  setTheme(!body.classList.contains('dark'));
 });
+
+// Fade-in and scroll animations
+window.addEventListener('DOMContentLoaded', () => {
+  // Animate landing section
+  document.querySelectorAll('.fade-in').forEach(el => {
+    el.style.opacity = 1;
+  });
+
+  // Scroll-triggered fade for info sections
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.scroll-fade').forEach(section => {
+    observer.observe(section);
+  });
+}); 
