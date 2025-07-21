@@ -444,3 +444,101 @@ body.dark .info-section p {
     margin-top: 5.5rem;
   }
 }
+
+
+
+/* Contact Form Styles */
+.contact-main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0rem 1rem 1rem 1rem; 
+}
+
+
+.contact-container {
+  background: var(--card-bg);
+  border-radius: 1.2rem;
+  box-shadow: var(--card-shadow);
+  padding: 2.5rem;
+  margin-top: 2rem;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.8rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+  color: var(--primary-text);
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.85rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: #2563eb;
+}
+
+/* Dark theme support */
+body.dark .form-group input,
+body.dark .form-group textarea {
+  border-color: #374151;
+  background: var(--card-bg);
+}
+
+body.dark .form-group input:focus,
+body.dark .form-group textarea:focus {
+  border-color: var(--accent);
+}
+
+/* Mobile responsive */
+@media (max-width: 700px) {
+  .contact-main {
+    padding: 5rem 1rem 2rem 1rem;
+  }
+  
+  .contact-container {
+    padding: 2rem;
+  }
+}
