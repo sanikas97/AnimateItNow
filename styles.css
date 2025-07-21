@@ -542,3 +542,32 @@ body.dark .form-group textarea:focus {
     padding: 2rem;
   }
 }
+
+/* Disabled button styles */
+.submit-btn:disabled,
+.submit-btn.disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+    opacity: 0.6;
+}
+
+.submit-btn:disabled:hover,
+.submit-btn.disabled:hover {
+    background: #9ca3af;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Dark theme disabled state */
+body.dark .submit-btn:disabled,
+body.dark .submit-btn.disabled {
+    background: #4b5563;
+    color: #9ca3af;
+}
+
+body.dark .submit-btn:disabled:hover,
+body.dark .submit-btn.disabled:hover {
+    background: #4b5563;
+}
