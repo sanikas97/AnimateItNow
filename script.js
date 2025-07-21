@@ -43,3 +43,39 @@ window.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 }); 
+
+// Contact form validation
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('.contact-form');
+    const submitBtn = document.querySelector('.submit-btn');
+    const formInputs = contactForm.querySelectorAll('input[required], textarea[required]');
+    
+    // Initially disable the submit button
+    submitBtn.disabled = true;
+    
+    // Function to check if all required fields are filled
+    function checkFormValidity() {
+        let allFieldsFilled = true;
+        
+        formInputs.forEach(input => {
+            if (input.value.trim() === '') {
+                allFieldsFilled = false;
+            }
+        });
+        
+        // Enable/disable button based on form validity
+        if (allFieldsFilled) {
+            submitBtn.disabled = false;
+            submitBtn.classList.remove('disabled');
+        } else {
+            submitBtn.disabled = true;
+            submitBtn.classList.add('disabled');
+        }
+    }
+    
+    // Add event listeners to all form inputs
+    formInputs.forEach(input => {
+        input.addEventListener('input', checkFormValidity);
+        input.addEventListener('blur', checkFormValidity);
+    });
+});
