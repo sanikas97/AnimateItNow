@@ -1,32 +1,30 @@
-## 📋 Description
+# 🚀 Pull Request
 
-Please include a summary of the change and which issue is fixed.
-
+## 📄 Description
+<!-- Describe your changes in detail -->
 Fixes #{ISSUE_NUMBER}
 
-## 🔍 Type of Change
-
+## 🛠️ Type of Change
+<!-- Please delete options that are not relevant. -->
 - [ ] Bug fix 🐛
 - [ ] New feature ✨
-- [ ] Code style update 🎨
-- [ ] Refactoring 🔨
+- [ ] Code refactor 🔨
 - [ ] Documentation update 📚
 - [ ] Other (please describe):
 
 ## ✅ Checklist
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] I have linked the issue using `Fixes #issue_number`
 
-- [ ] I have tested my code before submitting.
-- [ ] I have added comments where necessary.
-- [ ] I have linked the related issue (if applicable).
-
-## 📸 Screenshots (if any)
-
-Attach screenshots or gifs to visualize your change:
-
-```md
+## 📸 Screenshots (if available)
+<!-- Add screenshots/gifs to explain what you changed -->
 ![image](url)
-```
+
+## 📚 Related Issues
+<!-- List any related issues, discussions, or pull requests -->
 
 ## 🧠 Additional Context
-
-Add any other context or links about the pull request here.
+<!-- Any other information about this PR -->
