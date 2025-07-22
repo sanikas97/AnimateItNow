@@ -1,0 +1,13 @@
+name: "🚀 Feature Request"
+description: Suggest an idea
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+      description: Explain your feature request.
+      placeholder: I want a feature that...
+    validations:
+      required: true
